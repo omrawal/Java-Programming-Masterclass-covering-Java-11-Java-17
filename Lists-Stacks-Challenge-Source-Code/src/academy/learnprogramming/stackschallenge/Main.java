@@ -47,11 +47,10 @@ public class Main {
                     }
                 }
             }
-            if(stack.isEmpty()) return true;
-            return false;
+            return stack.isEmpty();
         }
         else {
-            mid=(int)(newLength/2); // if less than mid push ; == mid skip
+            mid= newLength/2; // if less than mid push ; == mid skip
             for(int i=0;i<string1.length();i++){
                 if(i<mid){
                     String k=string1.substring(i,i+1);
@@ -70,8 +69,7 @@ public class Main {
                     }
                 }
             }
-            if(stack.isEmpty()) return true;
-            return false;
+            return stack.isEmpty();
         }
 
 
