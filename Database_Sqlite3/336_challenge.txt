@@ -1,0 +1,6 @@
+select songs.title,songs.track from songs join albums on albums._id=songs.album where albums.name='Forbidden';
+select songs.title,songs.track from songs join albums on albums._id=songs.album where albums.name='Deep Purple';
+update artists set name='One Kitten' where name='Mehitabel';
+select songs.title from songs join albums on albums._id=songs.album where albums.name='Aerosmith' order by songs.title asc;
+select songs.title from songs join albums on albums._id=songs.album where albums.name='Aerosmith' order by songs.title asc;
+select distinct count(songs.title) from songs join albums on albums._id=songs.album where albums.name='Aerosmith' order by songs.title asc;
